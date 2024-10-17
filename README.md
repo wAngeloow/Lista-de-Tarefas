@@ -3,3 +3,4 @@
 </div>
 
 - [ ] Fazer versão mobile
+- [ ] Remover pasta vscode
