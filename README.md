@@ -4,3 +4,4 @@
 
 - [ ] Fazer versão mobile
 - [ ] Remover pasta vscode
+- [ ] Botão de Excluir Todos quadrado
