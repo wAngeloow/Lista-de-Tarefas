@@ -107,7 +107,7 @@ body {
 
 /* Estiliza o botão de excluir ao passar o mouse */
 .btnAcao.excluir:hover {
-    background-color: red;
+    background-color: #bd0c15;
 }
 
 /* Estiliza o texto das tarefas */
@@ -258,10 +258,103 @@ h1 {
 /* Estiliza o botão de excluir todos */
 #btnExcluirTodos{
     display: none;
-    background-color: red;
+    background-color: #db2a34;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 10px;
     cursor: pointer;
+}
+
+/* Estiliza o botão de excluir todos */
+#btnExcluirTodos:hover{
+    background-color: #bd0c15;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 480px) {
+    /* Estiliza o corpo da página */
+    body {
+        font-size: 0.9rem; 
+        padding: 10px; 
+    }
+
+    /* Estiliza o container principal */
+    .container {
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    /* Estiliza o input dentro do topo */
+    .topo input {
+        width: 100%; 
+        font-size: 1rem; 
+        padding: 10px; 
+    }
+
+    /* Estiliza o botão dentro do topo */
+    .topo button {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    /* Estiliza a lista de tarefas */
+    #listaTarefas {
+        padding: 0; 
+        max-height: 200px; 
+        overflow-y: auto; 
+    }
+
+    /* Estiliza os itens da lista de tarefas */
+    #listaTarefas li {
+        padding: 12px; 
+        background: #25292e;
+        border-radius: 10px;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-top: 8px; 
+    }
+
+    /* Estiliza o texto das tarefas */
+    .textoTarefa {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        width: calc(100% - 50px); 
+    }
+
+    /* Estiliza os botões de ação */
+    .btnAcao {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Estiliza a janela de edição */
+    #janelaEdicao {
+        width: 75%; 
+        padding: 15px;
+    }
+
+    /* Estiliza os inputs das linhas do formulário */
+    .frm-linha input {
+        font-size: 1rem;
+    }
+
+    /* Estiliza os botões das linhas do formulário */
+    .frm-linha button {
+        font-size: 1rem;
+        height: 40px; 
+    }
+
+    /* Estiliza o título */
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    /* Estiliza o título da edição */
+    .tituloEdicao {
+        font-size: 1.2rem; 
+    }
 }
